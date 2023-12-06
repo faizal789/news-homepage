@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h1 {
+    @apply font-extrabold text-4xl text-very-dark-blue-neutral;
+  }
+
+  h2 {
+    @apply font-bold text-xl leading-10 text-very-dark-blue-neutral;
+  }
+
+  li{
+    @apply text-lg text-dark-grayish-blue-neutral ;
+  }
+
+  p {
+    @apply text-base text-grayish-blue-neutral;
+  }
+}
