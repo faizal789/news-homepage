@@ -2,11 +2,9 @@ import React from "react";
 
 const Header = () => {
   const [isOpen, setIsOpen] = React.useState(false);
-  const [isVisible, setIsVisible] = React.useState(false);
 
   function handleClick() {
     setIsOpen((prevValue) => !prevValue);
-    setIsVisible(!isVisible);
   }
 
   return (
@@ -28,10 +26,10 @@ const Header = () => {
             onClick={handleClick}
           />
           <ul
-            className={`flex gap-7 max-md:${isOpen ? "flex" : "hidden"} ${
+            className={`flex gap-7 ${
               isOpen
-                ? "block max-md:fixed max-md:top-0 max-md:right-0 max-md:z-50 flex-col bg-off-white-neutral w-2/3 h-screen px-10 font-bold border py-10"
-                : ""
+                ? "fixed max-md:top-0 max-md:right-0 max-md:z-20 flex-col bg-off-white-neutral w-2/3 h-screen px-10 font-bold border py-10"
+                : "max-md:hidden"
             } `}
           >
             <img
