@@ -28,7 +28,7 @@ const Header = () => {
             onClick={handleClick}
           />
           <ul
-            className={`flex gap-7 max-md:${isOpen ? "flex" : "hidden"}  ${
+            className={`flex gap-7 max-md:${isOpen ? "flex" : "hidden"} ${
               isOpen
                 ? "block max-md:fixed max-md:top-0 max-md:right-0 max-md:z-50 flex-col bg-off-white-neutral w-2/3 h-screen px-10 font-bold border py-10"
                 : ""
